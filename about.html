@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Kang | Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.css" />
+    <link rel="stylesheet" href="cards-gallery.css">
+    <link rel="stylesheet" href="fadeinanimation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/caf4d93d24.js" crossorigin="anonymous" SameSite="none"></script>
+    <style>
+      body
+      {
+        font-family: 'Hind', sans-serif;
+      }
+    </style>
+    <script type="text/javascript">
+
+      function start()
+      {
+        //register the click when a visitor tries to open the resume
+        document.getElementById("openW").addEventListener("click", openWindow, false);
+      }
+
+      //receives the click from when a visitor tries to open my resume
+      function openWindow()
+      {
+        //open a window containing the CSS content
+        window.open("Patrick Kang_Resume.pdf");
+      }
+
+      window.addEventListener("load", start, false);
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Patrick Kang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- Full Page Image Header with Vertically Centered Content -->
+      <header class="masthead">
+      <div class="container h-100">
+      <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="font-weight-light">Background</h1>
+        <p class="lead">(703)-851-0024 <i class="fas fa-phone-square"></i> | <a href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="fas fa-envelope"></i></a></p>
+        <button id="openW" class="button"><span>View Resume</span></button>
+      </div>
+      </div>
+      <br />
+      <hr>
+      </div>
+      </header>
+
+      <br />
+      <br />
+      <div class="container">
+        <div class="about">
+        <br><img class="mypic" src="myprofilepic.jpg"></img><div class="vl"></div><h3>About Me</h3><br>
+        <div class="tab">
+        <p>I am currenly working as a Web Content Developer at RR Donnelly/Printing Corporation of America and currently residing in Centreville, VA.</p>
+        <p>My goal is to enhance my skills as a web/frontend developer and eventually advance to full-stack developer.
+        <br />In my free time, I love to play/watch sports, play the guitar, work on personal projects, travel, and take pictures.
+        </p>
+        <p>
+          I studied at George Mason University majoring in Information Technology (concentration in Web Development).
+        <br />I graduated on May 2020 receiving a Bachelor of Science degree in Information Technology with a 3.53 GPA.
+        </p>
+        <br />
+      </div>
+      <hr>
+      </div>
+    </div>
+
+      <!-- Grid format gallery -->
+      <section id="gallery" class="gallery-block cards-gallery">
+        <div class="container">
+         <div class="row">
+             <div class="col-md-6 col-lg-4">
+                 <div class="card border-0 transform-on-hover">
+                   <a class="lightbox" href="camera.JPG">
+                     <img src="camera.JPG" alt="An image of myself taking a photo." class="card-img-top">
+                   </a>
+                     <div class="card-body">
+                         <h6>Photography</h6>
+                         <p class="text-muted card-text">Houston, TX</p>
+                     </div>
+                 </div>
+             </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 transform-on-hover">
+                <a class="lightbox" href="guitar.JPG">
+                  <img src="guitar.JPG" alt="An image of myself playing the guitar." class="card-img-top">
+                </a>
+                  <div class="card-body">
+                    <h6>Guitar</h6>
+                    <p class="text-muted card-text">Centreville, VA</p>
+                  </div>
+              </div>
+            </div>
+
+             <div class="col-md-6 col-lg-4">
+                 <div class="card border-0 transform-on-hover">
+                   <a class="lightbox" href="art.JPG">
+                     <img src="art.JPG" alt="An image of myself in front of a painting." class="card-img-top">
+                   </a>
+                     <div class="card-body">
+                         <h6>Art</h6>
+                         <p class="text-muted card-text">National Portraits Museum, DC</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-md-6 col-lg-4">
+                 <div class="card border-0 transform-on-hover">
+                   <a class="lightbox" href="mason.jpg">
+                     <img src="mason.jpg" alt="An image of myself and two friends in front of George Mason statue." class="card-img-top">
+                   </a>
+                     <div class="card-body">
+                         <h6>University</h6>
+                         <p class="text-muted card-text">George Mason University, Fairfax</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-md-6 col-lg-4">
+                 <div class="card border-0 transform-on-hover">
+                   <a class="lightbox" href="nationals.jpg">
+                     <img src="nationals.jpg" alt="An image of myself in front of Nationals Park." class="card-img-top">
+                   </a>
+                     <div class="card-body">
+                         <h6>Sports</h6>
+                         <p class="text-muted card-text">Nationals Park, DC</p>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-md-6 col-lg-4">
+                 <div class="card border-0 transform-on-hover">
+                   <a class="lightbox" href="longboard.JPG">
+                     <img src="longboard.JPG" alt="An image of myself riding a longboard." class="card-img-top">
+                   </a>
+                     <div class="card-body">
+                         <h6>Longboard</h6>
+                         <p class="text-muted card-text">West Campus, GMU</p>
+                     </div>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+   </section>
+
+      <!-- Script for zooming in on images and slide in animation-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+      <script>
+      baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+      </script>
+
+      <!-- Button on fixed on bottom right corner of the page -->
+      <button class="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+      <script>
+        var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var rootElement = document.documentElement;
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.8) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn");
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn");
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+document.addEventListener("scroll", handleScroll);
+      </script>
+
+      <!-- Footer content -->
+      <div class="footer">
+        <div class="text-center center-block">
+              <a href="https://www.facebook.com/patrick.kang.940" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social" style="margin-right:10px"></i></a>
+	            <a href="https://twitter.com/patrickkang7" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social" style="margin-right:10px"></i></a>
+	            <a href="https://www.linkedin.com/in/pkang8/" target="_blank"><i id="social-li" class="fa fa-linkedin-square fa-3x social" style="margin-right:10px"></i></a>
+	            <a href="mailto:patrickkang7@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social" style="margin-right:10px"></i></a>
+              <br />
+              <br />
+              <p class="txt-railway">© Patrick Kang, All Rights Reserved.</p>
+        </div>
+      </div>
+
+  </body>
+</html>
