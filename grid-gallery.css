@@ -23,6 +23,7 @@
   transition: 0.4s;
   object-fit: cover;
   min-height: 100%;
+  min-width: 100%;
 }
 
 .gallery-block.grid-gallery .item{
