@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="fadeinanimation.css">
     <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/caf4d93d24.js" crossorigin="anonymous" SameSite="none"></script>
+
     <style>
       body
       {
         font-family: 'Hind', sans-serif;
       }
     </style>
+
     <script type="text/javascript">
 
       function start()
@@ -29,7 +31,7 @@
         document.getElementById("openW").addEventListener("click", openWindow, false);
       }
 
-      //receives the click from when a visitor tries to open my resume
+      //receives the click from when a visitor tries to open the resume
       function openWindow()
       {
         //open a window containing the CSS content
@@ -39,67 +41,69 @@
       window.addEventListener("load", start, false);
 
     </script>
+
   </head>
 
   <body>
 
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Patrick Kang</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Patrick Kang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="about.html">About
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 
       <!-- Full Page Image Header with Vertically Centered Content -->
       <header class="masthead">
-      <div class="container h-100">
-      <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h1 class="font-weight-light">Background</h1>
-        <p class="lead">(703)-851-0024 <i class="fas fa-phone-square"></i> | <a href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="fas fa-envelope"></i></a></p>
-        <button id="openW" class="button"><span>View Resume</span></button>
-      </div>
-      </div>
-      <br />
-      <hr>
-      </div>
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+              <h1 class="font-weight-light">Background</h1>
+              <p class="lead">(703)-851-0024 <i class="fas fa-phone-square"></i> | <a href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="fas fa-envelope"></i></a></p>
+              <button id="openW" class="button"><span>View Resume</span></button>
+            </div>
+          </div>
+          <br />
+          <hr>
+          </div>
       </header>
 
       <br />
       <br />
+
       <div class="container">
         <div class="about">
-        <br><img class="mypic" src="myprofilepic.jpg"></img><div class="vl"></div><h3>About Me</h3><br>
-        <div class="tab">
-        <p>I am currenly working as a Web Content Developer at RR Donnelly/Printing Corporation of America and currently residing in Centreville, VA.</p>
-        <p>My goal is to enhance my skills as a web/frontend developer and eventually advance to full-stack developer.
-        <br />In my free time, I love to play/watch sports, play the guitar, work on personal projects, travel, and take pictures.
-        </p>
-        <p>
-          I studied at George Mason University majoring in Information Technology (concentration in Web Development).
-        <br />I graduated on May 2020 receiving a Bachelor of Science degree in Information Technology with a 3.53 GPA.
-        </p>
-        <br />
+          <br><img class="mypic" src="myprofilepic.jpg"></img><div class="vl"></div><h3>About Me</h3><br>
+          <div class="tab">
+            <p>I am currenly working as a Web Content Developer at RR Donnelly/Printing Corporation of America and currently residing in Centreville, VA.</p>
+            <p>My goal is to enhance my skills as a web/frontend developer and eventually advance to full-stack developer.
+              <br />In my free time, I love to play/watch sports, play the guitar, work on personal projects, travel, and take pictures.
+            </p>
+            <p>
+              I studied at George Mason University majoring in Information Technology (concentration in Web Development).
+              <br />I graduated on May 2020 receiving a Bachelor of Science degree in Information Technology with a 3.53 GPA.
+            </p>
+            <br />
+          </div>
+          <hr>
+        </div>
       </div>
-      <hr>
-      </div>
-    </div>
 
       <!-- Grid format gallery -->
       <section id="gallery" class="gallery-block cards-gallery">
@@ -183,8 +187,9 @@
 
       <!-- Script for zooming in on images and slide in animation-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+
       <script>
-      baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
       </script>
 
       <!-- Button on fixed on bottom right corner of the page -->
@@ -192,29 +197,32 @@
 
       <script>
         var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
-var rootElement = document.documentElement;
+        var rootElement = document.documentElement;
 
-function handleScroll() {
-  // Do something on scroll
-  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-  if (rootElement.scrollTop / scrollTotal > 0.8) {
-    // Show button
-    scrollToTopBtn.classList.add("showBtn");
-  } else {
-    // Hide button
-    scrollToTopBtn.classList.remove("showBtn");
-  }
-}
+        function handleScroll() {
+          // Do something on scroll
+          var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+          if (rootElement.scrollTop / scrollTotal > 0.8) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn");
+          }
+          else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn");
+          }
+        }
 
-function scrollToTop() {
-  // Scroll to top logic
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-scrollToTopBtn.addEventListener("click", scrollToTop);
-document.addEventListener("scroll", handleScroll);
+        function scrollToTop() {
+          // Scroll to top logic
+          rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+        document.addEventListener("scroll", handleScroll);
+
       </script>
 
       <!-- Footer content -->
