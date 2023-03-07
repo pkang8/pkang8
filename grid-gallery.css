@@ -21,7 +21,7 @@
 .gallery-block.grid-gallery .item img{
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   transition: 0.4s;
-  object-fit: contain;
+  object-fit: cover;
   min-height: 100%;
   min-width: 100%;
 }
