@@ -11,7 +11,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('workdesk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('work_desk.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -66,11 +66,16 @@ body {
   min-height: 100vh;
 }
 
+.navbar-light {
+  border-bottom: 2px solid lightgray;
+}
+
 .footer {
   background-color: #282828;
   width: 100%;
   color: #fff;
-  padding-top: 2.5em;
+  padding-top: 1.5em;
+  border-top: 2px solid lightgray;
 }
 
 .button {
