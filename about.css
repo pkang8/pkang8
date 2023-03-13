@@ -186,9 +186,9 @@
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 42px;
-  width: 42px;
+  font-size: 14px;
+  line-height: 48px;
+  width: 48px;
 
   /* place it at the bottom right corner */
   position: fixed;
