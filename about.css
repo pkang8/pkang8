@@ -181,14 +181,14 @@
 }
 
 .scrollToTopBtn {
-  background-color: black;
+  background-color: #424242;
   border-radius: 50%;
   border: none;
   color: white;
   cursor: pointer;
-  font-size: 14px;
-  line-height: 48px;
-  width: 48px;
+  font-size: 16px;
+  line-height: 46px;
+  width: 46px;
 
   /* place it at the bottom right corner */
   position: fixed;
@@ -207,6 +207,11 @@
 .showBtn {
   opacity: 1;
   transform: translateY(0);
+}
+
+.scrollToTopBtn:hover {
+  background-color: lightgray;
+  color: #282828;
 }
 
 /*
