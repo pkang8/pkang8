@@ -17,6 +17,7 @@
   color: #fff;
 }
 
+
 /*
 
 .scroll-down {
@@ -183,11 +184,11 @@ hr {
 }
 
 .lead a {
-  color:white;
+  color:#404040;
 }
 
 .lead a:hover {
-  color: lightblue;
+  color: gray;
   text-decoration: none;
 }
 
@@ -477,4 +478,86 @@ li {
   .blob-btn:hover .blob-btn__blob {
     transform: translateZ(0) scale(1.4);
   }
+}
+
+
+section.banner {
+  padding: 160px 5%;
+}
+
+@media (width <= 720px) {
+  section.banner {
+    padding: 160px 10% 100px;
+  }
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 40vw;
+  margin-bottom: 40px;
+}
+
+@media (width <= 576px) {
+  .banner {
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-bottom: 2px solid lightgray;
+}
+
+.banner h2 {
+  white-space: nowrap;
+  margin: 0 0 4px;
+  font-size: 40px;
+  color: #282828;
+}
+
+.banner h3 {
+  font-weight: 400;
+  margin: 0;
+  color: #404040;
+}
+
+.lead {
+  color: #404040;
+  padding-top: 10px;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+.banner img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  animation: morph 3.5s linear infinite;
 }

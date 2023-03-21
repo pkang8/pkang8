@@ -5,7 +5,7 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('workdesk.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('gray.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,14 +50,12 @@
   cursor:pointer;
   transition: all 0.3s;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.3s;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -66,11 +64,9 @@
   right: -20px;
   transition: 0.3s;
 }
-
 .button:hover span {
   padding-right: 15px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
@@ -238,8 +234,6 @@
   -moz-animation:    fade_move_down 4s ease-in-out infinite;
   animation:         fade_move_down 4s ease-in-out infinite;
 }
-
-
 /*animated scroll arrow animation*//*
 @-webkit-keyframes fade_move_down {
   0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
