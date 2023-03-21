@@ -482,12 +482,12 @@ li {
 
 
 section.banner {
-  padding: 160px 15%;
+  padding: 30px 15%;
 }
 
-@media (width <= 500px) {
+@media (width <= 720px) {
   section.banner {
-    padding: 160px 10% 100px;
+    padding: 30px 10%;
   }
 }
 
@@ -503,7 +503,7 @@ section.banner {
   margin-bottom: 40px;
 }
 
-@media (width <= 500px) {
+@media (width <= 620px) {
   .banner {
     text-align: center;
     flex-direction: column-reverse;
