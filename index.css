@@ -67,7 +67,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
 }
 
 .navbar-light {
@@ -483,12 +482,12 @@ li {
 
 
 section.banner {
-  padding: 30px 15%;
+  padding: 160px 15%;
 }
 
 @media (width <= 720px) {
   section.banner {
-    padding: 30px 10%;
+    padding: 160px 10% 100px;
   }
 }
 
