@@ -76,9 +76,47 @@ body {
 .footer {
   background-color: #282828;
   width: 100%;
-  color: #fff;
+  color: #fffdfa;
   padding-top: 1.5em;
   border-top: 2px solid lightgray;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #282828;
+  outline: 2px solid lightgray;
+  padding: 10px 30px;
+  overflow: hidden;
+  transition: color 1s;
+  border-radius: 12px;
+}
+
+.button:hover {
+  color: #fffdfa;
+  text-decoration: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #303030;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+.button:hover::before {
+  transform: scaleX(1) skewX(35deg);
 }
 
 /*
@@ -285,7 +323,7 @@ li {
 
 .scrollToTopBtn:hover {
   background-color: #424242;
-  color: #fff;
+  color: #fffdfa;
 }
 
 .social {
@@ -303,7 +341,7 @@ li {
 .social li a {
   width: 63px;
   height: 63px;
-  background-color: #fff;
+  background-color: #fffdfa;
   text-align: center;
   line-height: 70px;
   font-size: 38px;
@@ -312,7 +350,7 @@ li {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 3px solid #fffdfa;
   z-index: 1;
 }
 
@@ -324,7 +362,7 @@ li {
 }
 
 .social li a:hover .icon {
-  color:#fff;
+  color:#fffdfa;
   transform: rotateY('360deg');
 }
 
@@ -403,7 +441,7 @@ li {
 }
 
 .blob-btn:hover {
-  color: #fff;
+  color: #fffdfa;
   border-radius: 30px;
 }
 
@@ -423,7 +461,7 @@ li {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background: #fff;
+  background: #fffdfa;
 }
 
 .blob-btn__blobs {
@@ -520,7 +558,7 @@ section.banner {
   translate: -50% -50%;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #fffdfa;
   border-bottom: 2px solid lightgray;
 }
 

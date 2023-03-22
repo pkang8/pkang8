@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #fffdfa;
 }
 
 .masthead hr {
@@ -30,10 +30,11 @@
   background-color: #282828;
   height: auto;
   width: auto;
-  color: #fff;
+  color: #fffdfa;
   border-top: 2px solid rgb(62, 62, 62);
   padding-top: 1.5em;
 }
+
 
 /*
 .button {
@@ -81,13 +82,13 @@
 
 .about h3{
   margin-left: 1em;
-  color: #fff;
+  color: #fffdfa;
 }
 
 .tab {
   margin-left: 1em;
   line-height: 2;
-  color: #fff;
+  color: #fffdfa;
 }
 
 
@@ -96,7 +97,7 @@
 }
 
 .lead a {
-  color:white;
+  color:#fffdfa;
 }
 
 .lead a:hover {
@@ -105,7 +106,7 @@
 }
 
 #social-fb {
-  color:white;
+  color:#fffdfa;
 }
 
 #social-fb:hover {
@@ -146,11 +147,11 @@
 }
 
 .navbar-brand {
-  color: #fff;
+  color: #fffdfa;
 }
 
 .nav-link {
-  color: #fff;
+  color: #fffdfa;
 }
 
 
@@ -266,7 +267,7 @@
 .social li a {
   width: 63px;
   height: 63px;
-  background-color: #fff;
+  background-color: #fffdfa;
   text-align: center;
   line-height: 70px;
   font-size: 38px;
@@ -275,7 +276,7 @@
   border-radius: 50%;
   position: relative;
   overflow: hidden;
-  border: 3px solid #fff;
+  border: 3px solid #fffdfa;
   z-index: 1;
 }
 
@@ -287,7 +288,7 @@
 }
 
 .social li a:hover .icon {
-  color:#fff;
+  color:#fffdfa;
   transform: rotateY('360deg');
 }
 
@@ -322,7 +323,7 @@
 .social li:nth-child(4) a:before {
   background: #dd4b39;
 }
-
+/*
 .blob-btn {
   z-index: 1;
   display: inline-block;
@@ -441,4 +442,43 @@
   .blob-btn:hover .blob-btn__blob {
     transform: translateZ(0) scale(1.4);
   }
+}*/
+
+.button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fffdfa;
+  outline: 2px solid #fffdfa;
+  padding: 10px 30px;
+  overflow: hidden;
+  transition: color 1s;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.button:hover {
+  color: #282828;
+  text-decoration: none;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: #c0c0c0;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+.button:hover::before {
+  transform: scaleX(1) skewX(35deg);
 }
