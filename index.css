@@ -10,13 +10,19 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('work_desk.jpg');
+  /*background: linear-gradient(
+  to right, rgba(0 0 0 / 0.7),rgba(0 0 0 / 0)), url('homepageheader.png');*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(homepageheader.png);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #e9edf8;
+  text-shadow: 0.1em 0.1em 0.2em #282828;
 }
 
+h2, h3, h4, h5, h6, p, li {
+  color: #2b4f71;
+}
 
 /*
 
@@ -69,16 +75,25 @@ body {
   min-height: 100vh;
 }
 
+nav {
+  background-color: #e9edf8;
+}
+
 .navbar-light {
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #c9cfdf;
 }
 
 .footer {
-  background-color: #282828;
+  background-color: #2b4f71;
   width: 100%;
   color: #fffdfa;
   padding-top: 1.5em;
-  border-top: 2px solid lightgray;
+  border-top: 2px solid #c9cfdf;
+}
+
+.txt-railway {
+  font-size: 14px;
+  color: #e9edf8
 }
 
 .button {
@@ -88,16 +103,16 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #282828;
-  outline: 2px solid lightgray;
+  color: #e9edf8;
+  outline: 2px solid #e9edf8;
   padding: 10px 30px;
   overflow: hidden;
   transition: color 1s;
-  border-radius: 30px;
+  z-index: 0;
 }
 
 .button:hover {
-  color: #fffdfa;
+  color: #e9edf8;
   text-decoration: none;
 }
 
@@ -109,7 +124,7 @@ body {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background-color: #303030;
+  background-color: #2b4f71;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
   transition: transform 1s;
@@ -188,23 +203,23 @@ body {
 }
 
 hr {
-  border: 1px solid lightgray;
+  border: 1px solid #c9cfdf;
 }
 
 .vl {
-  border-left: 6px solid purple;
+  border-left: 6px solid #c9cfdf;
   height: 35px;
   position: absolute;
 }
 
 .vl2 {
-  border-left: 6px solid red;
+  border-left: 6px solid #c9cfdf;
   height: 35px;
   position: absolute;
 }
 
 .vl3 {
-  border-left: 6px solid green;
+  border-left: 6px solid #c9cfdf;
   height: 35px;
   position: absolute;
 }
@@ -222,12 +237,13 @@ hr {
 }
 
 .lead a {
-  color:#404040;
+  color:#fffdfa;
 }
 
 .lead a:hover {
-  color: gray;
+  color: #c9cfdf;
   text-decoration: none;
+  font-weight: 800;
 }
 
 li {
@@ -267,9 +283,8 @@ li {
 }*/
 
 :root {
-  --mainColor: grey;
+  --mainColor: #2b4f71;
 }
-
 
 .navbar-nav .nav-item .nav-link .nav-item.active{
   color: var(--mainColor);
@@ -293,14 +308,14 @@ li {
 }
 
 .scrollToTopBtn {
-  background-color: lightgray;
+  background-color: #c9cfdf;
   border-radius: 50%;
   border: none;
-  color: #282828;
+  color: #2b4f71;
   cursor: pointer;
   font-size: 16px;
-  line-height: 46px;
-  width: 46px;
+  line-height: 38px;
+  width: 40px;
 
   /* place it at the bottom right corner */
   position: fixed;
@@ -322,8 +337,8 @@ li {
 }
 
 .scrollToTopBtn:hover {
-  background-color: #424242;
-  color: #fffdfa;
+  background-color: #657a97;
+  color: #e9edf8;
 }
 
 .social {
@@ -339,12 +354,12 @@ li {
 }
 
 .social li a {
-  width: 63px;
-  height: 63px;
-  background-color: #fffdfa;
+  width: 72px;
+  height: 72px;
+  background-color: #e9edf8;
   text-align: center;
   line-height: 70px;
-  font-size: 38px;
+  font-size: 40px;
   margin:0 0px;
   display: block;
   border-radius: 50%;
@@ -356,7 +371,7 @@ li {
 
 .social li a .icon {
   position: relative;
-  color: #262626;
+  color: #2b4f71;
   transition: .5s;
   z-index: 3;
 }
@@ -430,7 +445,7 @@ li {
   z-index: 1;
   left: 0;
   top: 0;
-  border: 2px solid lightgray;
+  border: 2px solid #c9cfdf;
 }
 
 .blob-btn::after {
@@ -528,7 +543,7 @@ section.banner {
     padding: 160px 10% 100px;
   }
 }
-
+/*
 .banner {
   position: relative;
   display: flex;
@@ -559,7 +574,7 @@ section.banner {
   width: 100%;
   height: 100%;
   background: #fffdfa;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #c9cfdf;
 }
 
 .banner h2 {
@@ -598,4 +613,4 @@ section.banner {
   height: 220px;
   object-fit: cover;
   animation: morph 3.5s linear infinite;
-}
+}*/

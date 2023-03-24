@@ -5,12 +5,14 @@
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background: linear-gradient(
-  to left, rgba(0 0 0 / 0.5),rgba(0 0 0 / 0)), url('myheader.png');
+  /*background: linear-gradient(
+  to left, rgba(0 0 0 / 0.5),rgba(0 0 0 / 0)), url('myheader.png');*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(myheader.png);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   color: #fffdfa;
+  text-shadow: 0.1em 0.1em 0.2em #282828;
 }
 
 .masthead hr {
@@ -34,6 +36,10 @@
   color: #fffdfa;
   border-top: 2px solid rgb(62, 62, 62);
   padding-top: 1.5em;
+}
+
+.txt-railway {
+  font-size: 14px;
 }
 
 
@@ -76,7 +82,7 @@
 */
 
 .vl {
-  border-left: 6px solid cyan;
+  border-left: 6px solid #657A97;
   height: 35px;
   position: absolute;
 }
@@ -106,8 +112,9 @@
 }
 
 .lead a:hover {
-  color: lightblue;
+  color: #e9edf8;
   text-decoration: none;
+  font-weight: 600;
 }
 
 #social-fb {
@@ -189,8 +196,8 @@
   color: #fffdfa;
   cursor: pointer;
   font-size: 16px;
-  line-height: 46px;
-  width: 46px;
+  line-height: 38px;
+  width: 40px;
 
   /* place it at the bottom right corner */
   position: fixed;
@@ -270,12 +277,12 @@
 }
 
 .social li a {
-  width: 63px;
-  height: 63px;
+  width: 72px;
+  height: 72px;
   background-color: #fffdfa;
   text-align: center;
   line-height: 70px;
-  font-size: 38px;
+  font-size: 40px;
   margin:0 0px;
   display: block;
   border-radius: 50%;
@@ -461,7 +468,6 @@
   padding: 10px 30px;
   overflow: hidden;
   transition: color 1s;
-  border-radius: 12px;
   z-index: 0;
 }
 
@@ -478,7 +484,7 @@
   z-index: -1;
   width: 150%;
   height: 100%;
-  background-color: #c0c0c0;
+  background-color: #c9cfdf;
   transform: scaleX(0) skewX(35deg);
   transform-origin: left;
   transition: transform 1s;
@@ -518,7 +524,7 @@
 }
 
 .container-card .card:hover .face.face1{
-  background: #ff0057;
+  background: #657A97;
   transform: translateY(0);
 }
 

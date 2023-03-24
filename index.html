@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="grid-gallery.css">
     <link rel="stylesheet" href="fadeinanimation.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hind&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/caf4d93d24.js" crossorigin="anonymous" SameSite="none"></script>
     <style>
       body
       {
-        font-family: 'Hind', sans-serif;
+        font-family: 'Nunito', sans-serif;
+        background-color: #e9edf8;
       }
     </style>
 
@@ -50,7 +51,7 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Patrick Kang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +71,7 @@
         </div>
       </div>
     </nav>
-
+    <!---
     <div class="container">
       <section class="banner">
         <div class="bannerTitle">
@@ -78,7 +79,7 @@
           <h3>
             Welcome to my Portfolio.
           </h3>
-          <p class="lead"><!--(703)-851-0024 <i class="lni lni-phone"></i> | --><a class= "email" href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="lni lni-envelope"></i></a></p>
+          <p class="lead"><a class= "email" href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="lni lni-envelope"></i></a></p>-->
          <!--- <div class="buttons">
             <button id="openW" class="blob-btn">
               Resume
@@ -92,11 +93,44 @@
               </span>
             </button>
           </div>-->
-          <a id="openW" href="#" class="button">Resume</a>
+          <!--<a id="openW" href="#" class="button">Resume</a>
         </div>
         <img src="myprofilepic.jpg" />
       </section>
-    </div>
+    </div>-->
+
+      <!-- Full Page Image Header with Vertically Centered Content -->
+      <header class="masthead">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+              <h1 class="font-weight-light">Experience</h1>
+              <p class="lead"><!--(703)-851-0024 <i class="lni lni-phone"></i> | --><a href="mailto:patrickkang7@gmail.com">patrickkang7@gmail.com <i class="lni lni-envelope"></i></a></p>
+              <!--<button id="openW" class="button"><span>View Resume</span></button>
+              <div class="buttons">
+                <button id="openW" class="blob-btn">
+                  Resume
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>-->
+              <a id="openW" href="#" class="button">Resume</a>
+            </div>
+            <!--<div class="scroll-down"></div>-->
+          </div>
+          <br />
+          <hr>
+        </div>
+      </header>
+      <br />
+      <br />
+      <br />
 
       <!--Body -->
       <div class="container">
@@ -270,7 +304,7 @@
     </div>
 
     <!-- Grid format gallery -->
-    <section id="gallery" class="gallery-block cards-gallery">
+    <section id="gallery" class="gallery-block cards-gallery card">
       <div class="container">
         <div class="title">
           <div class="vl3"></div><h3>Projects</h3>
