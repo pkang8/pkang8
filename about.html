@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Patrick Kang | Portfolio</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -15,8 +16,22 @@
     <link rel="stylesheet" href="fadeinanimation.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/caf4d93d24.js" crossorigin="anonymous" SameSite="none"></script>
+    <script>var viewportmeta = document.querySelector('meta[name="viewpoint"]');
+      if(viewportmeta) 
+      {
+        if(screen.width < 375) 
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        }
+
+        else 
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+    </script>
 
     <style>
       body
@@ -129,7 +144,7 @@
           <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <!--<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">-->
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
                     <h3>Design</h3>
                 </div>
             </div>
@@ -144,7 +159,7 @@
           <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <!--<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">-->
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
                     <h3>Code</h3>
                 </div>
             </div>
@@ -159,7 +174,7 @@
           <div class="card">
             <div class="face face1">
                 <div class="content">
-                    <!--<img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">-->
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
                     <h3>Launch</h3>
                 </div>
             </div>
