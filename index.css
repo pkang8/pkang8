@@ -394,7 +394,7 @@ li {
 }
 .kards {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 	grid-gap: 1.5rem;
 }
 .kard {
@@ -403,6 +403,8 @@ li {
 	padding: 1.5rem;
 	overflow: hidden;
 	border-radius: 0.8rem;
+  box-shadow: 0 5px 10px 
+		rgba(0, 0, 0, 0.15);
 }
 .kard-title-large {
 	font-family: Impact, sans-serif;
@@ -477,6 +479,8 @@ li {
   overflow: hidden;
 
   border-radius: 28px;
+  box-shadow: 0 5px 10px 
+		rgba(0, 0, 0, 0.15);
 }
 .ag-courses-item_link {
   display: block;
@@ -642,21 +646,19 @@ li {
 }
 
 .container-skills {
-  max-width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 .container-skills .skillCard {
   position: relative;
-  width: 300px;
+  width: 260px;
   height: 400px;
   margin: 0 auto;
   background: #c9cfdf;
   border-radius: 15px;
-  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
 }
 .container-skills .skillCard .face {
   position: absolute;
@@ -720,6 +722,12 @@ li {
   border-radius: 15px;
 }
 .container-skills .skillCard:nth-child(3) .face.face2 {
+  /*background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);*/
+  background-color: #657a97;
+  border-radius: 15px;
+}
+
+.container-skills .skillCard:nth-child(4) .face.face2 {
   /*background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);*/
   background-color: #657a97;
   border-radius: 15px;
