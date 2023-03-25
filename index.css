@@ -87,7 +87,7 @@ nav {
 }
 
 .footer {
-  background-color: #2b4f71;
+  background-color: #657a97;
   width: 100%;
   color: #fffdfa;
   padding-top: 1.5em;
@@ -210,19 +210,19 @@ hr {
 }
 
 .vl {
-  border-left: 6px solid #c9cfdf;
+  border-left: 6px solid #657a97;
   height: 35px;
   position: absolute;
 }
 
 .vl2 {
-  border-left: 6px solid #c9cfdf;
+  border-left: 6px solid #657a97;
   height: 35px;
   position: absolute;
 }
 
 .vl3 {
-  border-left: 6px solid #c9cfdf;
+  border-left: 6px solid #657a97;
   height: 35px;
   position: absolute;
 }
@@ -254,7 +254,7 @@ li {
 }
 
 :root {
-  --mainColor: #2b4f71;
+  --mainColor: #657a97;
 }
 
 .navbar-nav .nav-item .nav-link .nav-item.active{
@@ -282,7 +282,7 @@ li {
   background-color: #c9cfdf;
   border-radius: 50%;
   border: none;
-  color: #2b4f71;
+  color: #657a97;
   cursor: pointer;
   font-size: 16px;
   line-height: 46px;
@@ -308,7 +308,7 @@ li {
 }
 
 .scrollToTopBtn:hover {
-  background-color: #657a97;
+  background-color: #2b4f71;
   color: #e9edf8;
 }
 
@@ -341,7 +341,7 @@ li {
 
 .social li a .icon {
   position: relative;
-  color: #2b4f71;
+  color: #657a97;
   transition: .5s;
   z-index: 3;
 }
