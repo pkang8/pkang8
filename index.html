@@ -22,7 +22,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Impact&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/caf4d93d24.js" crossorigin="anonymous" SameSite="none"></script>
-    <script>var viewportmeta = document.querySelector('meta[name="viewpoint"]');</script>
+    <script>var viewportmeta = document.querySelector('meta[name="viewpoint"]');
+    if(viewportmeta) {
+        if(screen.width < 375) {
+        var newScale = screen.width / 375;
+        viewportmeta.content = "width=375, minimum-scale=1.0" + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+
+    }else {
+        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+      }
+    }
+    </script>
     <style>
       body
       {
@@ -32,15 +42,7 @@
     </style>
 
     <script type="text/javascript">
-      if(viewportmeta) {
-        if(screen.width < 375) {
-        var newScale = screen.width / 375;
-        viewportmeta.content = "width=375, minimum-scale=1.0" + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
 
-    }else {
-        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-      }
-    }
       function start()
       {
         //register the click when a visitor tries to open the resume
