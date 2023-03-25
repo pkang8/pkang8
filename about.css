@@ -7,7 +7,7 @@
   min-height: 500px;
   /*background: linear-gradient(
   to left, rgba(0 0 0 / 0.5),rgba(0 0 0 / 0)), url('myheader.png');*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(myheader.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)), url(myheader.png);
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
