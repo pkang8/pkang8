@@ -732,3 +732,41 @@ li {
   background-color: #657a97;
   border-radius: 15px;
 }
+
+.container-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text span {
+  text-transform: uppercase;
+  padding: 0 0.3rem;
+  font-size: 30px;
+  animation: zoomup 1s ease-in;
+  display: inline-block;
+  animation-delay: calc(200ms * var(--i));
+  color: #c9cfdf;
+}
+
+@keyframes zoomup {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2) translateY(-50px);
+    filter: blur(1px);
+    opacity: 0;
+  }
+}
