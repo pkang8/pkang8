@@ -434,8 +434,9 @@ li {
 	margin-left: auto;
 }
 .kard:hover .kard-cta {
-	background-color: #011f44;
+	background-color: #657a97;
 }
+
 .kard:hover .kard-title-large {
 	transform: translateX(-115%);
 	color: #e9edf8;
@@ -468,7 +469,7 @@ li {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .ag-courses_item {
   -ms-flex-preferred-size: calc(33.33333% - 30px);
@@ -485,7 +486,11 @@ li {
 .ag-courses-item_link {
   display: block;
   padding: 30px 20px;
-  background-color: #657a97;
+  background: rgb(43,79,113);
+  background: -moz-linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  background: linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b4f71",endColorstr="#c9cfdf",GradientType=1);
 
   overflow: hidden;
 
@@ -631,7 +636,11 @@ li {
 		#16d9e3 0%,#30c7ec 47%,
 		#46aef7 100%
 	);*/
-  background-color: #657a97;
+  background: rgb(43,79,113);
+  background: -moz-linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  background: linear-gradient(45deg, rgba(43,79,113,1) 0%, rgba(101,122,151,1) 50%, rgba(201,207,223,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b4f71",endColorstr="#c9cfdf",GradientType=1);
 }
 .flip__body--back {
 	/*background-image: linear-gradient(
@@ -713,23 +722,31 @@ li {
 }
 .container-skills .skillCard:nth-child(1) .face.face2 {
   /*background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);*/
-  background-color: #657a97;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(gmulogo.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
 }
 .container-skills .skillCard:nth-child(2) .face.face2 {
   /*background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);*/
-  background-color: #657a97;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(it.jpg);
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
 }
 .container-skills .skillCard:nth-child(3) .face.face2 {
   /*background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);*/
-  background-color: #657a97;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(webdev.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
 }
 
 .container-skills .skillCard:nth-child(4) .face.face2 {
   /*background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);*/
-  background-color: #657a97;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(gmuepicmovement.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
 }
 
