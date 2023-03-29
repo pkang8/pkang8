@@ -65,7 +65,7 @@
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" data-reveal="top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Patrick Kang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,10 +91,11 @@
       <header class="masthead">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-reveal="top" data-reveal-delay="0.10s">
               <h3 class="title" style="--duration: 1s">
                 <span style="--delay: 0.5s"><p>Patrick Kang</p></span>
-                <span style="--delay: 0.8s"><p>Web Developer</p></span></h3>
+                <span style="--delay: 0.8s"><p>Web Developer</p></span>
+              </h3>
               <!--<button id="openW" class="button"><span>View Resume</span></button>
               <div class="buttons">
                 <button id="openW" class="blob-btn">
@@ -123,7 +124,7 @@
       <!-- Body -->
       <div class="container">
         <br />
-        <div id="aboutme" class="about">
+        <div id="aboutme" class="about" data-reveal="top">
           <br><img class="mypic" src="mypic.png"></img><div class="vl"></div><h3>About Me</h3><br>
           <div class="tab">
             <p>I am currenly working as a Web Content Developer at RR Donnelly/Printing Corporation of America and currently residing in Centreville, VA.</p>
@@ -141,7 +142,7 @@
       </div>
 
       <div class="container">
-        <div class="container-card">
+        <div class="container-card" data-reveal="top">
           <div class="card">
             <div class="face face1">
                 <div class="content">
@@ -194,7 +195,7 @@
       <!-- Grid format gallery -->
       <section id="gallery" class="gallery-block cards-gallery cards">
         <div class="container">
-         <div class="row">
+         <div class="row" data-reveal="top">
              <div class="col-md-6 col-lg-4">
                  <div class="card border-0 transform-on-hover">
                    <a class="lightbox" href="camera.JPG">
@@ -279,7 +280,7 @@
       </script>
 
       <!-- Button on fixed on bottom right corner of the page -->
-      <button class="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+      <button class="scrollToTopBtn"><i class="fas fa-angle-up"></i></button>
 
       <script>
         var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
@@ -330,5 +331,7 @@
           <p class="txt-railway">© Patrick Kang, All Rights Reserved.</p>
         </div>
       </div>
+
+      <script src="about.js"></script>
 </body>
 </html>
