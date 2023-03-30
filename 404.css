@@ -20,7 +20,7 @@ body {
 }
 
 .container-star {
-  background-image: linear-gradient(to bottom, #292256 0%, #8446cf 70%, #a871d6 100%);
+  background-image: linear-gradient(to bottom, #212122 0%, #282828 70%, #303030 100%);
 }
 .container-star:after {
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(15, 10, 38, 0.2) 100%);
@@ -956,7 +956,7 @@ button {
   transition: opacity 0.2s ease;
 }
 button:hover {
-  opacity: 0.7;
+  opacity: 0.4;
 }
 button:focus {
   outline: 0;
